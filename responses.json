@@ -1,0 +1,32 @@
+[{
+  "id":  0,
+  "chatbotResponse": "Hi! This is LISA. I have a great shift opportunity for you! Are you interested in hearing about it?\nPlease respond \"Yes\" or \"No\"",
+  "movingForward": true,
+  "expectedResponses": [{"input":  "Yes", "leadsTo":  2},{"input":  "No", "leadsTo": 1}]
+}, {
+  "id": 1,
+  "chatbotResponse": "Ok, thanks. Can you let me know why not?\nRespond 1: Too far\nRespond 2: Not available\nRespond 3: Other",
+  "movingForward": true,
+  "expectedResponses": [{"input":  "1", "leadsTo":  3},{"input":  "2", "leadsTo": 4},{"input":  "3", "leadsTo": 5}]
+}, {
+  "id": 2,
+  "chatbotResponse": "Great the shift at 1313 Mockingbird Ln at 2/15/2021 4:00pm - 12:00am.\nWe'll see you there!",
+  "movingForward": false,
+  "expectedResponses": []
+}, {
+  "id": 3,
+  "chatbotResponse": "Thanks for letting me know. I'll avoid offering shifts at this location in the future",
+  "movingForward": false,
+  "expectedResponses": []
+}, {
+  "id": 4,
+  "chatbotResponse": "Thanks for letting me know. I'll avoid offering shifts at this time in the future",
+  "movingForward": false,
+  "expectedResponses": []
+}, {
+  "id": 5,
+  "chatbotResponse": "Ok. Thanks. I won't offer shifts at this time or location in the future",
+  "movingForward": false,
+  "expectedResponses": []
+}
+]
